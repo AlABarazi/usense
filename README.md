@@ -6,7 +6,8 @@ Javascript gaming engine Playcanvas was used in this concep application to visua
 The application also include chat service to reach for help. The concept was also used in Industry hack competition for Martela company with some modefication and added features and came in third place.
 
 
-# Main Stack: Javascript, Meteor.js, React.js, Cloud mongoDB (No SQL), IoT through APIs, Material-UI, GoDaday and hosted the website for one year on Meteor Galaxy
+# Main Stack: 
+Javascript, Meteor.js, React.js, Cloud mongoDB (No SQL), IoT through APIs, Material-UI, GoDaday and hosted the website for one year on Meteor Galaxy
 
 For more infromation refer to my master thesis
 https://aaltodoc.aalto.fi/handle/123456789/32384
