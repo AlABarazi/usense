@@ -1,0 +1,8 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "MONGO_URL":"mongodb://alabrazi:Thanks2u!!@ds253468.mlab.com:53468/bim",
+       "ROOT_URL": "http://www.lovol.life/"
+     }
+   }
+}

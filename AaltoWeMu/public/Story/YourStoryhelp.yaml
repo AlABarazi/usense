@@ -1,0 +1,232 @@
+
+start:
+  - play morningBGM:
+  - show school_morning: WITH FADE
+  - show deuzi: normal
+  - deuzi says: And if not...
+  - show deuzi: happy
+  - effect SHOWTITLE:
+    title: Chapter 1
+    subtitle: The basics
+  - deuzi says: First thing we'll check is the file structure.
+  - choice:
+    - I have it!:
+      - show deuzi: happy
+      - deuzi says: Great! What a hardworking student.
+    - Not yet:
+      - show deuzi: angry
+      - deuzi says: What are you waiting for!?
+      - deuzi says: Go do it, I'll wait...
+      - choice:
+        - I have it!:
+          - show deuzi: happy
+          - scene: writingTheStory
+  - show folders: AT 550,300 WITH FADE
+
+  - scene: storySetup
+
+storySetup:
+  - show school_morning:
+  - show jair:
+  - effect SHOWTITLE:
+    title: Chapter 2
+    subtitle: Setting up the story
+
+  - wait: 300
+  - show jair: happy
+  - jair says: Just joking!
+  - jair says: You won't always know what things you need for a story.
+  - jair says: So every time you add something, remember to also add it to the setup file.
+  - show jair: normal
+  - jair says: Let's see how it's made.
+  - show jair: AT RIGHT WITH MOVE
+  - show setupbg: AT 400,350 WITH FADE
+  - jair says: First tag you need is setup.
+  - show school_afternoon: WITH FUSION
+  - hide setupbg: WITH FADE
+  - show deuzi: angry AT RIGHT
+    flipped: true
+  - show jair: normal
+    flipped: true
+  - show jair: normal
+  - hide setupch:
+  - jair says: Next up is cgs.
+  - show setupcgs: 400,350 WITH FADE
+  - jair says: CGs stands for Computer Graphics.
+  - show phone1: AT 600,300
+  - show phone2: AT 380,300
+  - hide phone1:
+  - hide phone2:
+  - hide setupcgs:
+  - show setupaudio: AT 400,350
+  - show phone1: AT 400,300
+  - play ringtoneSFX:
+  - text: Tururu Ruru Ruru Ruruuuu
+  - hide setupaudio:
+
+writingTheStory:
+  - show school_afternoon:
+
+  - show scenestart:
+  - hide scenestart:
+  - show scenehide:
+  - liz says: In this scene Jair is trying to annoy Deuzilene once again.
+  - hide scenehide:
+  - show liz: AT CENTER WITH MOVE
+  - scene: interval
+
+interval:
+  - stop morningBGM: WITH FADE
+  - show room_night:
+  - show room_night_light: WITH FUSION
+  - play cicadas: WITH FADE
+  - show deuzi: normalC WITH FADE
+  - deuzi says: Hey! I knew I was going to find you here.
+  - interrupt 6:
+    - Isn't it a bit awkward???:
+      - show deuzi: angryC
+      - deuzi says: What do you mean?
+  - scene: storeAtNight
+
+storeAtNight:
+  - play storeBGM:
+  - show store:
+  - effect THUNDER:
+  - marco says: I better hurry. Bye!
+  - hide marco:
+  - deuzi says: Maybe we should go too, before...
+  - ambient RAIN:
+  - choice:
+    - Yes, no problem:
+      - liz says: Ok, then I guess I'll see you tomorrow, don't be late!
+    - Sure:
+      - liz says: Ok, then I guess I'll see you tomorrow, don't be late!
+  - scene: backToTheRoom
+
+backToTheRoom:
+  - play cicadas: WITH FADE
+  - show room_night:
+  - show room_night_light: WITH FUSION
+  - text: Your day was very tiring, but you're closer to be a visual novel writer. Tomorrow is going to be another long day, you better rest.
+  - show room_night: WITH FUSION
+  - wait: 400
+  - scene: day2
+
+day2:
+  - play morningBGM:
+  - show school_morning: WITH FADE
+
+
+  - liz says: With visual choices instead of using a text line, each option is an image you have to click.
+  - liz says: Let's see it in action.
+  - visualchoice:
+    - phone1 AT 620,300:
+      - play ringtoneSFX:
+      - text: Tururu Ruru Ruru Ruruuuu
+      - liz says: You chose the pink phone.
+    - phone2 AT 180,300:
+      - play ringtoneSFX2:
+      - text: Pi Pi Ri Pi Ripi Pi Ri
+      - liz says: You chose the light blue phone.
+  - scene: graduation
+
+graduation:
+  - show street_afternoon:
+  - show deuzi: AT 300,600 WITH FADE
+    flipped: false
+  - show liz: happy AT 500,600 WITH FADE
+  - show jair: happy AT RIGHT WITH FADE
+  - show marco: happy AT LEFT WITH FADE
+  - deuzi says: So, this is the big day.
+  - deuzi says: You can now go out in the world and write your own stories.
+  - show deuzi: happy
+  - deuzi says: I'm so proud of you!
+  - liz says: I'm looking forward to read all of your stories.
+  - jair says: Let's keep in touch!
+  - marco says: And don't be scared of making it complex!
+  - deuzi says: You can do it!
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - RenJS developed by
+      - lunafromthemoon
+      - null
+      - Inspired by Ren'Py
+      - Powered by PhaserJS
+      - null
+      - null
+      - Thanks for playing
+      - The Tutorial Game
+      - null
+      - written by
+      - lunafromthemoon
+      - null
+      - edited by
+      - rumpelcita
+      - null
+      - background art and cgs by
+      - konett
+      - null
+      - characters by
+      - Shida
+      - null
+      - music by
+      - Evan Schaeffer
+
+invitationScene:
+  - show phone2: AT 400,300
+  - play ringtoneSFX:
+  - jair says: Told you! It's probably Deuzilene trying to convince you to go to that party.
+  - choice:
+    - Pick up the phone:
+      - deuzi says: Hey! I'm glad you're not asleep yet!
+      - deuzi says: There's this party tonight and I wanted you to come.
+      - deuzi says: So what do you say?
+      - choice:
+        - Sounds like fun!:
+          - scene: partyScene
+        - I'm really tired:
+          - deuzi says: Oh well, next time it is then. Have a good night!
+    - Let it ring:
+      - jair says: Brutal! You ain't even picking up.
+  - scene: dormsScene
+
+varsScene:
+  # numeric variables
+  - var score: 0
+  - var extraPoints: 3
+  - var score: "{score} + 10"
+  - var bonification: "{extraPoints} - 1"
+  - var totalScore: "({score} + {extraPoints}) * {bonification}"
+  # boolean variables
+  - var lightOn: true
+  - var lightOff: "!{lightOn}"
+  - var lampOn: true
+  - allLightsOn: "{lightOn} && {lampOn}"
+  - canRead: "{lightOn} || {lampOn}"
+  - highScore: "{score} > 10"
+  - perfectScore: "{score} == {maxScore}"
+  - lowScore: "{score} <= {maxScore} / 2"
+  # string variables
+  - var name: Marco
+  - var surname: Da Silva
+  - var wholeName: "Mr. {name} {surname}"
+  - text: "Hello {wholeName}, your score is {score}!"
+  # if
+  - if ({lightOn}):
+    - text: The light is on.
+  - else:
+    - text: The light is off.
+  - deuzi says: Let's check your score.
+  - deuzi says: "You have {score} points."
+  - if ({score} > 10):
+    - show deuzi: happy
+    - deuzi says: You did great! Congratulations!
+    - if ({name} == {favouriteStudent}):
+      - deuzi says: That's why you're my favourite student.
+  - else:
+    - deuzi says: It's not bad, but you'll have to study a bit more next time.
+
+    - call helloworld:
+      param1: hello
+      param2: world

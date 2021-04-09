@@ -1,0 +1,23 @@
+[
+  {
+    "lecturename":"Work Environment",
+    "avg_like":0,
+    "avg_like_voters":0,
+    "lecture_satisfaction":0,
+    "lecture_satisfaction_voters":0,
+    "teching_period":{"coursestart":"14/09","courseend":"14/12"},
+    "lecture_calender":[{"day":"Sunday","timestart":"12:15","timeend":"14:15","roomname":"U405"},
+      {"day":"Wednesday","timestart":"12:15","timeend":"14:15","roomname":"U405"}
+    ]
+  },
+  {
+    "lecturename":"BIM Summer School",
+    "avg_like":0,
+    "avg_like_voters":0,
+    "lecture_satisfaction":0,
+    "lecture_satisfaction_voters":0,
+    "locations":[{"day":"Tuesday","timestart":"12:15","timeend":"14:15","roomname":"U405"},
+      {"day":"Wednesday","timestart":"12:15","timeend":"14:15","roomname":"U405"}
+    ]
+  }
+]

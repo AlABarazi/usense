@@ -1,0 +1,26 @@
+[
+  {
+    "contentname":"badge",
+    "unhatched":{"title":"Unhatched Egg", "icon":"unhatched.svg","desc":"Happy inside your egg? Finland is too cold? Only those who hatch win prizes ;)"},
+    "hatched":{"title":"Hatched Egg","icon":"hatched.svg","desc":"Wow you made it! Welcome  to the world. Soon you will start to walk :)"},
+    "chick":{"title":"Chick","icon":"chick.svg","desc":"You decided to leave your egg? Walk meet us and claim your prize."}
+  },
+  {
+    "contentname":"cloth",
+    "naked":{"title":"Naked Specie","icon":"naked.jpg","desc":"You save energy by carying minimal cloth but then burn energy to heat yourself up"},
+    "normal":{"title":"Herd Specie","icon":"normal.png","desc":"Nothing special about you. Just like most others."},
+    "desert":{"title":"Desert Specie","icon":"desert.png","desc":"You still need some time to adapt to what you call icy deserts."}
+  },
+  {
+    "contentname":"bmi",
+    "thin":{"title":"Balsa","icon":"thin.png","desc":"The balsa tree produces a creamy white wood that when dried has a density of just 120 kg per cubic meter, one of the lightest species of wood available."},
+    "healthy":{"title":"Normal","icon":"healthy.png","desc":"But..as a single measure, BMI is clearly not a perfect measure of health. But it’s still a useful starting point for important conditions that become more likely when a person is overweight or obese. source:https://www.health.harvard.edu"},
+    "extra":{"title":"Bigfoot","icon":"extra.png","desc":"“If you are always trying to be normal, you will never know how amazing you can be.”― Maya Angelou"}
+  },
+  {
+    "contentname":"something",
+    "thin":{"title":"Balsa","icon":"thin.png","desc":"The balsa tree produces a creamy white wood that when dried has a density of just 120 kg per cubic meter, one of the lightest species of wood available."},
+    "healthy":{"title":"Normal","icon":"healthy.png","desc":"But..as a single measure, BMI is clearly not a perfect measure of health. But it’s still a useful starting point for important conditions that become more likely when a person is overweight or obese. source:https://www.health.harvard.edu"},
+    "extra":{"title":"Bigfoot","icon":"extra.png","desc":"“If you are always trying to be normal, you will never know how amazing you can be.”― Maya Angelou"}
+  }
+]

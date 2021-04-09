@@ -1,0 +1,78 @@
+
+start:
+  - ambient CLEAR:
+  - play morningBGM:
+  - show office: WITH FADE
+  - show marco: happy AT CENTER WITH MOVE
+    flipped: true
+  - marco says: Welcome to Aalto Pulse!
+  - marco says: My name is Marco and I want to tell you how Puls will change your life.
+  - show marco: normal
+  - effect SHOWTITLE:
+    title: What is Aalto Pulse?
+    subtitle: Play, participate, progress.
+  - wait: 300
+  - marco says: In Pulse you learn and grow.
+  - marco says: You see where you stand compared with other.
+  - marco says: We sense your pulse and you sense the pulse of Aalto.
+  - marco says: It is a win win participation.
+  - marco says: Where you should have good time.
+  - marco says: We get better getting to know each other, togeher.
+  - marco says: And when this system up and alive, you get rewarded for your particpation.
+  - show marco: happy
+  - marco says: Now tell me do you like the logo?
+  - show aaltologo: AT 750,300 WITH FADE
+  - choice:
+    - yes!:
+      - show marco: happy
+      - marco says: Great! I am happy that you like it.
+    - No look too much simple and stolen from Aalto logo:
+      - show marco: angry
+      - marco says: Well, are you sure?
+      - choice:
+        - No!:
+          - show marco: happy
+          - marco says: Good! That is what I expected.
+  - hide aaltologo:
+  - play ringtoneSFX:
+  - text: seems someone is calling I will pick the call.
+  - var word: correct
+  - marco says: "This was the {word} answer!"
+  - hide marco:
+  - var score: 11
+  - var lighton: true
+  - var lampOn: true
+  - var canRead: "{lightOn} || {lampOn}"
+  - var allLightsOn: "{lightOn} && {lampOn}"
+  - if ({score} > 10):
+    - hide office: WITH FADE
+    #- show room_night_light: WITH FUSION
+    - play cicadas: WITH FADE
+    - scene: day2
+    - text: seems someone is calling I will pick the call.
+  - else:
+    - text: ballalalalal
+    - scene: day2
+
+day2:
+  - show liz: AT CENTER WITH MOVE
+  - liz says: "Always busy guy"
+  - show liz: happy
+  - liz says: "I am liz, will bring you more about pulse"
+  - show liz: normal
+  - liz says: "But, tell me first what interest you more?"
+  - show liz: normal
+  - ambient RAIN:
+  - visualchoice:
+    - phone11 AT 620,300:
+      - play ringtoneSFX:
+      - text: Tururu Ruru Ruru Ruruuuu
+      - show liz: angry
+      - liz says: Not again!
+      - liz says: Sorry I have to go now!
+    - phone22 AT 180,300:
+      - play ringtoneSFX2:
+      - text: Pi Pi Ri Pi Ripi Pi Ri
+      - show liz: angry
+      - liz says: Not again!
+      - liz says: Sorry I have to go now!

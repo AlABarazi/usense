@@ -1,0 +1,9 @@
+(room,pitch,yaw,type,text,URL,category,icon,reply,status)
+Meteor.publish('alltags'
+"material-ui": "^1.0.0-beta.24",
+
+Meteor.publish('userdata'
+
+
+this.props.Session.get('selectedRooms').length
+Meteor.publish('allproscons'

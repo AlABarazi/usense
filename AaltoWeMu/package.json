@@ -1,0 +1,38 @@
+{
+  "name": "short-lnk",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-runtime": "6.18.0",
+    "jss": "^9.4.0",
+    "jss-preset-default": "^4.0.1",
+    "material-ui": "^1.0.0-beta.24",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "meteor-node-stubs": "~0.2.0",
+    "moment": "^2.15.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-addons-pure-render-mixin": "^15.4.1",
+    "react-addons-shallow-compare": "^0.14.8",
+    "react-dates": "^10.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-iframe": "^1.1.0",
+    "react-jss": "^8.2.0",
+    "react-router": "^3.0.0",
+    "react-tap-event-plugin": "^3.0.2",
+    "recompose": "^0.26.0",
+    "simpl-schema": "0.0.3",
+    "supports-color": "^5.1.0",
+    "typeface-roboto": "0.0.45"
+  },
+  "engines": {
+    "node": "4.6.2"
+  },
+  "devDependencies": {
+    "babel-plugin-direct-import": "^0.5.0"
+  }
+}
